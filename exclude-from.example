@@ -1,0 +1,11 @@
+- Applications
+- Downloads
+- VMs
+- Sites/*/node_modules
+- Sites/*/vendor
++ Sites/*/.git
++ Sites/*/.gitignore
++ .ssh
++ .vim
++ .dotfiles
+- .*
