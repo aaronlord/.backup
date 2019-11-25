@@ -76,7 +76,7 @@ It's just an rsync option. [See this tutorial](https://sites.google.com/site/rsy
 
 > Allows for multiple hosts?
 
-Yeah, I backup mutliple hosts/machines to the same external drive. This script keeps backups for each host:
+Yeah, I backup mutliple hosts/machines to the same external drive. This script keeps backups for each `$HOST`:
 
 ```
 $ tree -L 2 /media/aaron/Samsung-T5/Backups/
