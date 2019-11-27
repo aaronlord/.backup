@@ -6,7 +6,7 @@ EXCLUDE=$3
 
 if [[ -n "$USER" && -n "$UUID" ]]; then
     # mount the drive by uuid
-    sudo -i -u $USER udisksctl mount --block-device /dev/disk/by-uuid/$UUID > /dev/null 2>&1
+    udisksctl mount --block-device /dev/disk/by-uuid/$UUID > /dev/null 2>&1
 
     # check if the device is mounted
     MOUNTPOINT=$(lsblk -o UUID,MOUNTPOINT | awk -v u="$UUID" '$1 == u {print $2}')
